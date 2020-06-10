@@ -34,7 +34,7 @@ const TitleName = styled.h1`
 `
 
 
-export default function App() { 
+export default function Lettering() { 
     const [fontSize , setFontSize ] = useState(1)
     const [showLastName , setShowLastName ] = useState(1)
 
