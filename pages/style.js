@@ -39,7 +39,7 @@ const TitleName = styled.h1`
         transform : scale(1)
       }
       50% { 
-        transform : scale(2)
+        transform : scale(3)
       }
       100% { 
         transform : scale(1)
