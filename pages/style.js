@@ -7,7 +7,7 @@ const ContentTitleName = styled.div`
     justify-content : space-between;
     padding : 24px;
     position : fixed;
-    align-items : center;
+    // align-items : center;
     left :  -${props => props.showLastName}px;
 `
 
@@ -17,6 +17,7 @@ const TitleName = styled.h1`
     color : #fff;
     white-space: pre;
     position: relative;
+    height : max-content;
 
      &:after {
         content: "";
