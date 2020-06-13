@@ -18,7 +18,7 @@ export default function Lettering() {
     return (
         <>
         <Head>
-            <title>My page title</title>
+            <title>Caio Triana - Web Developer</title>
             <meta property="og:title" content="My page title" key="title" />
       </Head>
             <GlobalStyle />
