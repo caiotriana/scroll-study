@@ -19,7 +19,7 @@ export default function Lettering() {
         <>
         <Head>
             <title>Caio Triana - Web Developer</title>
-            <meta property="og:title" content="My page title" key="title" />
+            <meta property="og:title" content="Caio Triana - Web Developer" key="title" />
       </Head>
             <GlobalStyle />
             <ContentTitleName showLastName={showLastName}  onWheel={(ev)=> wheelControl(ev)}>
