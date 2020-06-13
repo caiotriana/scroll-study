@@ -6,12 +6,14 @@ import GlobalStyle from '../assets/style';
 export default function Lettering() { 
     const [fontSize , setFontSize ] = useState(1)
     const [showLastName , setShowLastName ] = useState(1)
+    const [isAnimate , setIsAnimate ] = useState(true)
     const [MousePosition, setMousePosition] = useState({
         left: 0,
         top: 0
     })
 
     function handleOnWheel(ev){
+        setIsAnimate(false)
         if(fontSize < 0 ) return setFontSize(1)
         if (fontSize < 700 && ev.deltaY >= 0 ) setFontSize(fontSize * 1.1) 
             else if(fontSize < 700 || showLastName < 2 && ev.deltaY < -1 ) setFontSize(fontSize - (10 * 1.5)) 
@@ -29,7 +31,7 @@ export default function Lettering() {
       </Head>
             <GlobalStyle />
             <ContentTitleName showLastName={showLastName}  onWheel={(ev)=> handleOnWheel(ev)} onMouseMove={(ev)=> handleMouseMove(ev)}>
-                <TitleName passFontSize={fontSize}  style={{left:MousePosition.left , top: MousePosition.top}} >
+                <TitleName passFontSize={fontSize}  style={{left:MousePosition.left , top: MousePosition.top}} isAnimate={isAnimate} >
                     Caio {showLastName >= 2 ? 'Triana' : null} 
                 </TitleName>
             </ContentTitleName>

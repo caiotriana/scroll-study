@@ -30,6 +30,20 @@ const TitleName = styled.h1`
         top : 50%;
         border-radius : 5000px;
         transform : translateY(-50%);
+        animation: ${props => props.isAnimate ? 'pulseSize 2s infinite' : ''};
+  }
+  
+
+  @keyframes pulseSize { 
+      0% { 
+        transform : scale(1)
+      }
+      50% { 
+        transform : scale(2)
+      }
+      100% { 
+        transform : scale(1)
+      }
   }
 `
 
