@@ -10,11 +10,6 @@ export default function Lettering() {
         left: 0,
         top: 0
     })
-    // useEffect(() => {
-    //     document.addEventListener('mousemove', (e) => {
-    //         setMousePosition({left: e.pageX, top: e.pageY});
-    //     });
-    //   },[MousePosition]);
 
     function handleOnWheel(ev){
         if(fontSize < 0 ) return setFontSize(1)
@@ -23,11 +18,8 @@ export default function Lettering() {
                 else if(fontSize > 700 &&  showLastName < 2871 && ev.deltaY >= 0 ) setShowLastName(showLastName + 25)
                     else if(ev.deltaY < -1  ) setShowLastName(showLastName - 25)
     }
-
     
     function handleMouseMove(ev) { setMousePosition({left: ev.pageX, top: ev.pageY}); }
-    
-    console.log(MousePosition)
 
     return (
         <>
